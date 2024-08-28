@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  background-color: #fefae0;
+  color: #362F2A;
+  margin: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+hr{
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #403d39;
+  margin: 3% 10% 0;
+}
+
+#validate-model {
+  font-weight: 400;
+}
+.template-prompt-textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  display: block;
+  padding: 3%;
+  margin: 0 auto;
+  border-radius: 16px;
+  border-color: #ced4da;
+  outline: none;
+  min-width: 400px;
+  width: 90%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.index-wrapper {
+  text-align: center;
+}
+
+.action-button {
+  display: block;
+  margin: 32px auto;
+  width: 160px;
+  height: 45px;
+  padding: 10px 24px;
+  align-items: center;
+  background-color: #eb5e28;
+  font-family: "Roboto", sans-serif;
+  color: #faedcd;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.home-nav {
+  text-align: center;
+  font-style: italic;
+}
+
+#model-wrapper {
+  background-color: #faedcd;
+  position: relative;
+  width: 640px;
+  min-height: 640px;
+  margin: 24px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:  0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  padding: 42px;
+  & h1 {
+    text-align: center;
+  }
+}
+
+.warning {
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+footer {
+  display: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+@keyframes gradient {
+	from {
+		background-position: 200% 0;
+	}
+
+	to {
+		background-position: 0% 0;
+	}
+}
+
+.loading {
+	background: linear-gradient(to right, #ffd000, #fff3b0, #ffd000);
+	width: 100%;
+	background-size: 200%;
+	background-position: 50% 100%;
+	animation: gradient 2s infinite;
+	animation-fill-mode: forward;
+	animation-timing-function: linear;
+  height: 24px;
+  margin-bottom: 8px;
+  border-radius: 30px;
+}
+
+.loading-wrapper {
+  display: none;
+}
+
+#second-ai-output {
+  color: blue;
+}
